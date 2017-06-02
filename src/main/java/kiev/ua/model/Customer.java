@@ -19,8 +19,8 @@ public class Customer extends ApplicationClient {
         this.setRole(RoleList.ROLE_USER);
     }
 
-    public Customer(String name, String phone, Address address) {
-        super(name, phone, address);
+    public Customer(String name, String phone, Address address, RoleList role) {
+        super(name, phone, address, role);
     }
 
     public Long getId() {

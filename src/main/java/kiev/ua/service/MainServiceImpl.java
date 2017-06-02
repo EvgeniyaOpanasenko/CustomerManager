@@ -3,7 +3,6 @@ package kiev.ua.service;
 import kiev.ua.dao.CustomerDao;
 import kiev.ua.exceptions.InvalidInputException;
 import kiev.ua.model.Customer;
-import kiev.ua.model.Field;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,7 +43,7 @@ public class MainServiceImpl implements MainService {
     }
 
     @Override
-    public boolean updateCustomer(Field serch, Field insert) throws InvalidInputException {
+    public boolean updateCustomer(Customer customer) throws InvalidInputException {
         return false;
     }
 }

@@ -2,7 +2,6 @@ package kiev.ua.service;
 
 import kiev.ua.exceptions.InvalidInputException;
 import kiev.ua.model.Customer;
-import kiev.ua.model.Field;
 
 import java.util.List;
 
@@ -15,6 +14,6 @@ public interface MainService {
 
     Customer getCustomerByName(String name)throws InvalidInputException;
 
-    boolean updateCustomer(Field serch, Field insert) throws InvalidInputException;
+    boolean updateCustomer(Customer customer) throws InvalidInputException;
 
 }
