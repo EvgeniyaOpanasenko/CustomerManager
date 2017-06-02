@@ -23,7 +23,6 @@ public class Customer extends ApplicationClient {
         super(name, phone, address);
     }
 
-
     public Long getId() {
         return id;
     }

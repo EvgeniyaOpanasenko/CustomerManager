@@ -15,7 +15,12 @@ public class User extends ApplicationClient {
     private Long id;
 
     public User() {
+
         this.setRole(RoleList.ROLE_ADMIN);
+    }
+
+    public User(String name, String phone, Address address) {
+        super(name, phone, address);
     }
 
     public Long getId() {

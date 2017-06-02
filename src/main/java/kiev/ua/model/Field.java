@@ -1,6 +1,6 @@
 package kiev.ua.model;
 
-public abstract class Field {
+public class Field {
 
     private String name;
     private String phone;

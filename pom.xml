@@ -8,6 +8,8 @@
     <artifactId>CustomerManager</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>war</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -30,6 +32,11 @@
             <artifactId>h2</artifactId>
         </dependency>
 
+       <!-- <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+-->
     </dependencies>
 
     <build>
@@ -40,5 +47,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
 </project>
