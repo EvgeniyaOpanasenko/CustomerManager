@@ -14,10 +14,10 @@ public class Customer extends ApplicationClient {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    /*public Customer() {
+    public Customer() {
 
         this.setRole(RoleList.ROLE_USER);
-    }*/
+    }
 
     public Customer(String name, String phone, Address address) {
         super(name, phone, address);

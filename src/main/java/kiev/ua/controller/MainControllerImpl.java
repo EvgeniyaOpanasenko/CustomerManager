@@ -9,7 +9,6 @@ import java.util.List;
 @Controller
 public class MainControllerImpl implements MainController {
 
-
     @Override
     public List<Customer> getAllCustomers() {
         return null;
