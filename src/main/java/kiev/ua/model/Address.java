@@ -6,14 +6,16 @@ import kiev.ua.enums.StreetList;
 
 import javax.persistence.Entity;
 
-@Entity
 public class Address {
 
     private CountryList country;
     private CityList city;
     private StreetList street;
 
-    public Address() {
+    public Address(CountryList country, CityList city, StreetList street) {
+        this.country = country;
+        this.city = city;
+        this.street = street;
     }
 
     public CountryList getCountry() {

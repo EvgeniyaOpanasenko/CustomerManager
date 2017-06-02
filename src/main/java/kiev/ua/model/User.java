@@ -8,21 +8,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class User extends ApplicationClient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
-
-    private RoleList role;
-
     public User() {
-    }
-
-    public User(RoleList role) {
-        this.role = RoleList.ROLE_ADMIN;
+        this.setRole(RoleList.ROLE_ADMIN);
     }
 
     public Long getId() {
@@ -31,13 +24,5 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
