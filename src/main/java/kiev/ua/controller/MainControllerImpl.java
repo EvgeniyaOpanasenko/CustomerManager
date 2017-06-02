@@ -31,7 +31,7 @@ public class MainControllerImpl implements MainController {
     }
 
     @Override
-    public boolean updateCustomer(Field field) {
+    public boolean updateCustomer(Long id, Field field) {
         return false;
     }
 }

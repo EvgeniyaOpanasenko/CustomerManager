@@ -14,6 +14,6 @@ public interface MainController {
 
     Customer getCustomerByName();
 
-    boolean updateCustomer(Field field);
+    boolean updateCustomer(Long id, Field field);
 
 }
